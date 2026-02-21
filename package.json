@@ -1,0 +1,66 @@
+{
+  "name": "neurosurf",
+  "version": "1.0.0",
+  "description": "Local-first agentic 3D spatial browser powered by Ollama LLM swarm",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "node launch.js",
+    "predev": "rimraf node_modules/.vite",
+    "dev": "concurrently \"vite --host\" \"wait-on http://localhost:3333 && node launch.js\"",
+    "build": "vite build",
+    "electron": "node launch.js",
+    "preview": "vite preview",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.neurosurf.app",
+    "productName": "NeuroSurf",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "public/icon.png"
+    }
+  },
+  "keywords": [
+    "ai",
+    "browser",
+    "3d",
+    "ollama",
+    "agent"
+  ],
+  "author": "NeuroSurf",
+  "license": "MIT",
+  "dependencies": {
+    "@mediapipe/camera_utils": "^0.3.1675466862",
+    "@mediapipe/hands": "^0.4.1675469240",
+    "@react-three/drei": "^9.92.7",
+    "@react-three/fiber": "^8.15.12",
+    "@react-three/postprocessing": "^2.15.11",
+    "framer-motion": "^10.16.16",
+    "postprocessing": "^6.35.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "socket.io-client": "^4.7.2",
+    "three": "^0.160.0",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^8.2.2",
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.1",
+    "rimraf": "^6.1.2",
+    "vite": "^5.0.10",
+    "wait-on": "^7.2.0"
+  }
+}

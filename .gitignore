@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+backend/venv/
+.env
+*.log
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project specific
+data/
+*.bak
+shortcut.lnk
+*.exe
+memory_db/
+chroma_db/
+context_memory.json
+neuro_backend.log

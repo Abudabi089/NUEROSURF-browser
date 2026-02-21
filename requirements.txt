@@ -1,0 +1,40 @@
+# NeuroSurf Backend Dependencies
+# Python 3.10+ required
+
+# Web Framework & WebSocket
+fastapi==0.109.0
+uvicorn[standard]==0.25.0
+python-socketio==5.10.0
+python-multipart==0.0.6
+
+# Browser Automation
+playwright==1.40.0
+
+# Local LLM Integration
+ollama==0.1.6
+google-generativeai
+chromadb==0.4.22
+
+# Voice Processing
+SpeechRecognition==3.10.0
+PyAudio==0.2.14
+openai-whisper==20231117
+sounddevice==0.4.6
+numpy==1.26.3
+
+# Utilities
+pydantic==2.5.3
+python-dotenv==1.0.0
+aiofiles==23.2.1
+Pillow==10.2.0
+mcp==0.1.0
+fpdf2==2.7.7
+
+# Web Scraping & Search
+httpx==0.27.0
+beautifulsoup4==4.12.3
+lxml==5.1.0
+duckduckgo-search
+
+# Context Memory Extension
+supermemory

@@ -1,0 +1,17 @@
+[
+    {
+        "name": "NeuroSurf",
+        "short_name": "NeuroSurf",
+        "start_url": ".",
+        "display": "standalone",
+        "background_color": "#000000",
+        "description": "AI-Powered Spatial Browser",
+        "icons": [
+            {
+                "src": "icon.png",
+                "sizes": "192x192",
+                "type": "image/png"
+            }
+        ]
+    }
+]
